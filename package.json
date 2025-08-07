@@ -2,13 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "main": "src/app.ts",
-  "type": "module",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "vitest",
-    "test:run": "vitest run",
+    "test": "vitest --config vitest.config.mjs",
+    "test:run": "vitest run --config vitest.config.mjs",
     "dev": "nodemon src/app.ts",
     "build": "tsc",
     "start": "node dist/app.js"

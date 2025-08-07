@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
@@ -6,4 +5,7 @@ export default defineConfig({
     globals: true,
     environment: 'node',
   },
+  esbuild: {
+    target: 'node18'
+  }
 })
