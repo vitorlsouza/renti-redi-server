@@ -12,7 +12,6 @@
 1. **Clone and install dependencies:**
 
    ```bash
-   cd server
    npm install
    ```
 
@@ -50,7 +49,7 @@ I implemented a clean, layered architecture following Node.js best practices:
 
 - Controllers
 - Services
-- Models\*\*
+- Models
 - Middleware
 - Utils
 
