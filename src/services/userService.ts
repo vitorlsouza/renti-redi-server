@@ -13,7 +13,6 @@ export class UserService {
 
   async createUser(userData: CreateUserRequest): Promise<User> {
     try {
-      // Get location data from weather API
       const locationData = await this.weatherService.getLocationData(
         userData.zipCode
       );

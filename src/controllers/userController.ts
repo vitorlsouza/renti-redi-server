@@ -31,24 +31,6 @@ export const getAllUsers = asyncHandler(
   }
 );
 
-// @desc    Get user by ID
-// @route   GET /api/users/:id
-export const getUserById = asyncHandler(async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const user = await userService.getUserById(id);
-
-  if (!user) {
-    return res.status(404).json({
-      message: "User not found",
-    });
-  }
-
-  res.status(200).json({
-    message: "User retrieved successfully",
-    data: user,
-  });
-});
-
 // @desc    Update user
 // @route   PUT /api/users/:id
 export const updateUser = asyncHandler(async (req: Request, res: Response) => {
