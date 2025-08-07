@@ -31,6 +31,8 @@ const nameValidation = (optional = false) => {
 
 const zipCodeValidation = (optional = false) => {
   const validator = body("zipCode")
+    .notEmpty()
+    .withMessage("Zip code is required")
     .trim()
     .matches(/^\d{5}(-\d{4})?$/)
     .withMessage("Zip code must be in format 12345 or 12345-6789");

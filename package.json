@@ -2,11 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "main": "src/app.ts",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "jest",
+    "test": "vitest",
+    "test:run": "vitest run",
     "dev": "nodemon src/app.ts",
     "build": "tsc",
     "start": "node dist/app.js"
@@ -27,9 +29,12 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/node": "^24.2.0",
+    "@types/supertest": "^6.0.3",
     "concurrently": "^9.2.0",
     "nodemon": "^3.1.10",
+    "supertest": "^7.1.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }

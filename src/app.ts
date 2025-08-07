@@ -25,7 +25,7 @@ app.get("/health", (_req, res) => {
 app.use("/users", userRoutes);
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
 
 export default app;
